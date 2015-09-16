@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<title>iOS/Mac Autolayout Constraints</title>
+		<meta name="description" content="An interactive autolayout constraints tool for iOS and Mac">
+		<link href="./style/prism.css" rel="stylesheet" type="text/css">
+		<link href="./style/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>iOS/Mac Autolayout Constraints</h1>
+		<div class="language language-objc"></div>
+		<div class="language language-swift active"></div>
+
+		<div class="view-names">
+			<div><label>View</label><input type="text" class="view-name" value="layer"></div>
+			<div><label>Superview</label><input type="text" class="superview-name" value="self.view"></div>
+		</div>
+
+		<div class="alignment">
+			<div class="alignment-button alignment-top-edges" name="alignment-top-edges" title="Align top edges"></div>
+			<div class="alignment-button alignment-vertical-centers" name="alignment-vertical-centers" title="Align vertical centers"></div>
+			<div class="alignment-button alignment-bottom-edges" name="alignment-bottom-edges" title="Align bottom edges"></div>
+			<div class="alignment-button alignment-left-edges" name="alignment-left-edges" title="Align left edges"></div>
+			<div class="alignment-button alignment-horizontal-centers" name="alignment-horizontal-centers" title="Align horizontal centers"></div>
+			<div class="alignment-button alignment-right-edges" name="alignment-right-edges" title="Align right edges"></div>
+		</div>
+
+		<div class="container">
+			<div class="size-container">
+				<div class="size-wrapper">
+					<input type="text" class="size size-width value" value="0" name="width" title="Width" readonly=""> <span class="size-separator">x</span> <input type="text" class="size size-height value" value="0" name="height" title="Height" readonly="">
+				</div>
+			</div>
+			<input type="text" class="from from-top value" title="From left" value="0" name="top" readonly="">
+			<input type="text" class="from from-right value" title="From right" value="0" name="right" readonly="">
+			<input type="text" class="from from-bottom value" title="From bottom" value="0" name="bottom" readonly="">
+			<input type="text" class="from from-left value" title="From left" value="0" name="left" readonly="">
+		</div>
+
+		<div class="instructions">
+			<p>This is an interactive autolayout constraints tool for iOS and Mac.</p>
+			<ol>
+				<li>click on a number to enable/disable a constraint</li>
+				<li>double click on a number to edit its value</li>
+				<li>profit!</li>
+			</ol>
+		</div>
+
+		<div class="footer">made with love by <a href="http://chadscira.com/">Chad Scira</a></div>
+
+		<div class="code-container">
+			<pre><code class="code language-objc"></code></pre>
+		</div>
+
+		<script type="text/javascript" src="./script/underscore.min.js"></script>
+		<script type="text/javascript" src="./script/prism.js"></script>
+
+		<script type="text/javascript" src="./script/Constraints.js"></script>
+		<script type="text/javascript" src="./script/ValueComponent.js"></script>
+		<script type="text/javascript" src="./script/AlignmentComponent.js"></script>
+		<script type="text/javascript" src="./script/App.js"></script>
+	</body>
+</html>
